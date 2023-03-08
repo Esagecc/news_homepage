@@ -1,8 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-footer { font-size: 11px; text-align: center; }
-footer a { color: hsl(228, 45%, 44%); }
+main {
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --orange: hsl(35, 77%, 62%);
+    --red: hsl(5, 85%, 63%);
+    --white: hsl(36, 100%, 99%);
+    --gray: hsl(233, 8%, 79%);
+    --gray-blue: hsl(236, 13%, 42%);
+    --dk-blue: hsl(240, 100%, 5%);
+}
+
+footer { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+footer a {
+    color: hsl(228, 45%, 44%); 
+}
