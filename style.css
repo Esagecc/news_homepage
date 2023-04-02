@@ -19,6 +19,73 @@ main {
     --dk-blue: hsl(240, 100%, 5%);
 }
 
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 15px 0;
+}
+
+/* animated xs */
+.toggle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 15px;
+    cursor: pointer;
+    z-index: 5;
+    transition: all .5s ease-in-out;
+  }
+  
+  .toggle__burger{
+    width: 40px;
+    height: 3px;
+    background: var(--dk-blue);
+    transition: all .5s ease-in-out;
+  }
+  
+  .toggle__burger::before,
+  .toggle__burger::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: var(--dk-blue);
+    transition: all .5s ease-in-out;
+  }
+  
+  .toggle__burger::before {
+    transform: translateY(-7px);
+  }
+  
+  .toggle__burger::after {
+    transform: translateY(7px);
+  }
+  
+  /* ANIMATION */
+  .toggle.active .toggle__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .toggle.active .toggle__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .toggle.active .toggle__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+
+  
 footer { 
     font-size: 11px; 
     text-align: center; 
