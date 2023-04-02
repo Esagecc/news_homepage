@@ -33,6 +33,35 @@ main {
     padding: 15px 0;
 }
 
+.navbar-list {
+  position: fixed;
+  z-index: 3;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 0;
+  top:0;
+  right: 0;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-list.active {
+  display: flex;
+  width: 255px;
+  overflow-x: hidden;
+}
+  
+.navbar-list a {
+  color: #464343;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+}
+
 /* animated xs */
 .toggle {
     position: relative;
@@ -84,8 +113,10 @@ main {
     transform: rotate(-45deg) translate(35px, 35px);
   }
 
+.logo-image {
+  height: 28px;
+}
 
-  
 footer { 
     font-size: 11px; 
     text-align: center; 
