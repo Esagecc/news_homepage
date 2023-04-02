@@ -54,12 +54,33 @@ main {
   overflow-x: hidden;
 }
   
+#overlay {
+  position: fixed;
+  display:none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 2;
+}
+
+#overlay.active {
+  display: block;
+}
+
 .navbar-list a {
   color: #464343;
   padding: 10px 30px;
   text-decoration: none;
   font-size: 17px;
   font-weight: 400;
+}
+
+.navbar-list a:hover {
+  font-weight: 700;
 }
 
 /* animated xs */

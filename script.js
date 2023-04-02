@@ -1,5 +1,6 @@
 let toggle = document.getElementById('toggle')
 let navbarShow = document.getElementById('navbar-list')
+let overlay = document.getElementById('overlay')
 
 // toggle.addEventListener('click', sideNav)
 
@@ -8,11 +9,13 @@ document.onclick = function(e){
         {
         toggle.classList.remove('active')
         navbarShow.classList.remove('active')
+        overlay.classList.remove('active')
     }
 }
 
     toggle.onclick = function(){
     toggle.classList.toggle('active')
     navbarShow.classList.toggle('active')
-
+    overlay.classList.toggle('active')
 }
+
