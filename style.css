@@ -214,6 +214,38 @@ hr {
   background-color: var(--gray);
 }
 
+.pic-point {
+  display: flex;
+  padding-bottom: 38px;
+}
+
+.thumb {
+  height: 130px;
+  padding-right: 20px;
+}
+
+.num {
+  font-size: 2rem;
+  color: var(--gray);
+  font-weight: 700;
+}
+
+.pic-title {
+  font-size: 1.1rem;
+  font-weight: 900;
+  padding: 10px 0;
+}
+
+.pic-text {
+  font-size: 0.95rem;
+  color: var(--gray-blue);
+  line-height: 1.5rem;
+}
+
+.pics-card {
+  padding-bottom: 30px;
+}
+
 footer {
   font-size: 11px;
   text-align: center;
