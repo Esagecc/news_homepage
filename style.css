@@ -101,45 +101,45 @@ main {
   transition: all .5s ease-in-out;
 }
 
-  .toggle__burger{
-    width: 40px;
-    height: 3px;
-    transform: translateY(-4px);
-    background: var(--dk-blue);
-    transition: all .2s ease-in-out;
-  }
+.toggle__burger{
+  width: 40px;
+  height: 3px;
+  transform: translateY(-4px);
+  background: var(--dk-blue);
+  transition: all .2s ease-in-out;
+}
 
-  .toggle__burger::before,
-  .toggle__burger::after {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 3px;
-    background: var(--dk-blue);
-    transition: all .5s ease-in-out;
-  }
+.toggle__burger::before,
+.toggle__burger::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: var(--dk-blue);
+  transition: all .5s ease-in-out;
+ }
 
-  .toggle__burger::before {
-    transform: translateY(-7px);
-  }
+.toggle__burger::before {
+  transform: translateY(-7px);
+}
 
-  .toggle__burger::after {
-    transform: translateY(7px);
-  }
+.toggle__burger::after {
+  transform: translateY(7px);
+}
 
-  /* ANIMATION */
-  .toggle.active .toggle__burger {
-    transform: translateX(-50px);
-    background: transparent;
-  }
+/* ANIMATION */
+.toggle.active .toggle__burger {
+  transform: translateX(-50px);
+  background: transparent;
+}
 
-  .toggle.active .toggle__burger::before {
-    transform: rotate(45deg) translate(35px, -35px);
-  }
+.toggle.active .toggle__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
 
-  .toggle.active .toggle__burger::after {
-    transform: rotate(-45deg) translate(35px, 35px);
-  }
+.toggle.active .toggle__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
 
 .logo-image {
   height: 28px;
@@ -150,8 +150,12 @@ main {
   width: 100%;
 }
 
+.web3desktop {
+  display: none;
+}
+
 .title {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: 800;
   line-height: 40px;
   color: var(--dk-blue);
@@ -159,10 +163,10 @@ main {
 }
 
 .para-text {
-  font-size: 0.9rem;
+  font-size: .92rem;
   color: var(--gray-blue);
   line-height: 25px;
-  padding: 15px 0;
+  padding: 15px 0 25px;
 }
 
 button {
@@ -201,7 +205,7 @@ button {
 .article-title {
   font-size: 1.2rem;
   padding-bottom: 10px;
-  font-weight: 600;
+  font-weight: 550;
 }
 
 .article-text {
@@ -253,4 +257,38 @@ footer {
 
 footer a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) {
+  main {
+    width: 70%;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .toggle__burger {
+    display: none;
+  }
+
+  .navbar-list {
+    display:flex;
+    position: relative;
+    overflow: visible;
+    flex-direction: row;
+    height: 0;
+    width: 0;
+    top:0;
+    right: 0;
+    padding-top: 10px;
+  }
+
+  .web3mobile {
+    display: none;
+  }
+  
+  .web3desktop {
+    display: block;
+  }
 }
