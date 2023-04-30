@@ -261,7 +261,7 @@ footer a {
 
 @media (min-width: 600px) {
   main {
-    width: 70%;
+    width: 69%;
   }
 
   .toggle {
@@ -272,16 +272,37 @@ footer a {
     display: none;
   }
 
+  .top-navbar {
+    padding: 80px 0 50px;
+  }
+
+  .logo-image {
+    height: 40px;
+  }
+
   .navbar-list {
     display:flex;
     position: relative;
     overflow: visible;
     flex-direction: row;
-    height: 0;
-    width: 0;
-    top:0;
-    right: 0;
-    padding-top: 10px;
+    justify-content: flex-end;
+    height: 0vh;
+    padding:0;
+    top: -35px;
+    /* height: 0;
+    padding: 50px 0 60px; */
+  }
+
+  .navbar-list a {
+    font-size: 16px;
+    padding:0;
+    color: var(--gray-blue);
+    padding-left: 41px;
+  }
+
+ .top-card {
+  display: flex;
+    width: 100%;
   }
 
   .web3mobile {
@@ -290,5 +311,24 @@ footer a {
   
   .web3desktop {
     display: block;
+    width: 725px;
+  }
+
+  .top-left {
+    width:70%;
+  }
+
+  .left-bottom {
+    display: flex;
+  }
+
+
+  .blue-card {
+    padding: 20px 15px 0;
+    margin: 0  0 0 35px;
+  }
+
+  .pics-card {
+    display: flex;
   }
 }
