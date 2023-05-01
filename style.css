@@ -220,7 +220,7 @@ hr {
 
 .pic-point {
   display: flex;
-  padding-bottom: 38px;
+  padding-bottom: 36px;
 }
 
 .thumb {
@@ -253,6 +253,7 @@ hr {
 footer {
   font-size: 11px;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 footer a {
@@ -356,6 +357,15 @@ footer a {
 
   .pics-card {
     padding-top: 58px;
+    justify-content:space-between;
+  }
+
+  .pic-article {
+    width: 230px;
+  }
+
+  button {
+    width: 185px;
   }
 
   }
