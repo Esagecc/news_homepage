@@ -83,10 +83,11 @@ main {
   text-decoration: none;
   font-size: 17px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .navbar-list a:hover {
-  font-weight: 700;
+  color: var(--red);
 }
 
 /* animated xs */
@@ -98,7 +99,7 @@ main {
   height: 25px;
   cursor: pointer;
   z-index: 5;
-  transition: all .5s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .toggle__burger{
@@ -180,7 +181,11 @@ button {
   font-weight: 600; 
   cursor: pointer;
   width: 190px;
-  
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--dk-blue);
 }
 
 .blue-card {
@@ -198,14 +203,17 @@ button {
   padding: 32px 0 28px;
 }
 
-.article-title{
-  color: var(--white);
-}
-
 .article-title {
+  color: var(--white);
   font-size: 1.2rem;
   padding-bottom: 10px;
   font-weight: 550;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+.article-title:hover {
+  color: var(--orange);
 }
 
 .article-text {
@@ -238,6 +246,12 @@ hr {
   font-size: 1.1rem;
   font-weight: 900;
   padding: 10px 0;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.pic-title:hover {
+  color: var(--red);
 }
 
 .pic-text {
